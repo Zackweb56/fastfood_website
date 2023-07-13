@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFood website</title>
+    <!-- link aos fade -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonteawsome link cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="">
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-burger"></i>food</a>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#popular">popular</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#order">order</a></li>
+                <li><a href="#blogs">blogs</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <span class="fa-solid fa-magnifying-glass" id="search"></span>
+            <span class="fa-solid fa-cart-shopping" id="shop"></span>
+            <span class="fa-solid fa-user" id="user"></span>
+            <span class="fa-solid fa-moon" id="theme"></span>
+            <span class="fa-solid fa-bars" id="bars-menu"></span>
+        </div>
+    </header>
+    <!-- setcion search btn -->
+    <section class="form-search-btn" id="section-search">
+        <form action="" class="form">
+            <input type="text" placeholder="search here..." name="search">
+            <label for="search" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+    </section>
+    <!-- section shopping-cart -->
+    <section class="cart-shopping-btn" id="section-shop">
+        <div class="product-container">
+            <h3 class="title">your products</h3>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <div class="img"><img src="imgs/menu-2.png" alt=""></div>
+                    <div class="shopping-content">
+                        <h2>delicious food</h2>
+                        <span>quantity :</sp>
+                        <input type="number" value="1"><br>
+                        <span>price : <span class="price-shop">$40.00</span></span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <div class="img"><img src="imgs/menu-1.png" alt=""></div>
+                    <div class="shopping-content">
+                        <h2>delicious food</h2>
+                        <span>quantity :</sp>
+                        <input type="number" value="1"><br>
+                        <span>price : <span class="price-shop">$40.00</span></span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <div class="img"><img src="imgs/menu-3.png" alt=""></div>
+                    <div class="shopping-content">
+                        <h2>delicious food</h2>
+                        <span>quantity :</sp>
+                        <input type="number" value="1"><br>
+                        <span>price : <span class="price-shop">$40.00</span></span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <div class="img"><img src="imgs/menu-4.png" alt=""></div>
+                    <div class="shopping-content">
+                        <h2>delicious food</h2>
+                        <span>quantity :</sp>
+                        <input type="number" value="1"><br>
+                        <span>price : <span class="price-shop">$40.00</span></span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <div class="img"><img src="imgs/menu-5.png" alt=""></div>
+                    <div class="shopping-content">
+                        <h2>delicious food</h2>
+                        <span>quantity :</sp>
+                        <input type="number" value="1"><br>
+                        <span>price : <span class="price-shop">$40.00</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="total-container">
+                <h3 class="title">cart total</h3>
+                <div class="cart-content">
+                    <span>total : <span>$200</span></span>
+                    <button type="button" class="main-btn">proceed to checkout</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- section login/register -->
+    <section class="login-btn" id="login-btn">
+        <div class="login-container">
+            <h2 class="title">login from</h2>
+            <form action="">
+                <input type="email" placeholder="enter your email"><br>
+                <input type="password" placeholder="enter your password"><br>
+                <input type="checkbox" name="check" class="check">
+                <label for="check">remember me</label><br>
+                <button type="button" class="main-btn">login now</button><br>
+                <span>forget password?  <a href="#">click here</a></span><br>
+                <span>don't have an account?  <a href="#">create one</a></span>
+            </form>
+        </div>
+    </section>
+    <!-- home section -->
+    <section id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <span>welcome foodies</span>
+                <h2>different spices for the different tastes 😋</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde dolores temporibus hic quam debitis tenetur harum nemo.</p>
+                <button type="button" class="main-btn">order now</button>
+            </div>
+            <div class="home-imgs">
+                <img src="imgs/home-img.png" class="img1" alt="">
+                <img src="imgs/home-parallax-img.png" class="img2" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- category -->
+    <section id="category" data-aos="zoom-in-up">
+        <div class="category-container">
+            <div class="category-box">
+                <img src="imgs/cat-1.png" alt="">
+                <h2>combo</h2>
+            </div>
+
+            <div class="category-box">
+                <img src="imgs/cat-2.png" alt="">
+                <h2>pizza</h2>
+            </div>
+
+            <div class="category-box">
+                <img src="imgs/cat-3.png" alt="">
+                <h2>burger</h2>
+            </div>
+
+            <div class="category-box">
+                <img src="imgs/cat-4.png" alt="">
+                <h2>chicken</h2>
+            </div>
+
+            <div class="category-box">
+                <img src="imgs/cat-5.png" alt="">
+                <h2>dinner</h2>
+            </div>
+
+            <div class="category-box">
+                <img src="imgs/cat-6.png" alt="">
+                <h2>coffee</h2>
+            </div>
+        </div>
+    </section>
+    <!-- aboout -->
+    <section id="about" data-aos="zoom-in">
+        <div class="about-container">
+            <div class="about-img"><img src="imgs/about-img.png" alt=""></div>
+            <div class="about-content">
+                <div class="titles">
+                    <span class="span-family">why choose us?</span>
+                </div>
+                <h2>what's make our food delicious!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut explicabo, numquam iusto est a ipsum assumenda tempore esse corporis?</p>
+                <button type="button" class="main-btn">read more</button>
+                <div class="about-features">
+                    <div class="features-box">
+                        <img src="imgs/serv-1.png" alt="">
+                        <h2>fast delivery</h2>
+                    </div>
+                    <div class="features-box">
+                        <img src="imgs/serv-2.png" alt="">
+                        <h2>fresh food</h2>
+                    </div>
+                    <div class="features-box">
+                        <img src="imgs/serv-3.png" alt="">
+                        <h2>best quality</h2>
+                    </div>
+                    <div class="features-box">
+                        <img src="imgs/serv-4.png" alt="">
+                        <h2>24/7 support</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popular food -->
+    <section id="popular">
+        <div class="titles">
+            <span class="span-family">popular food</span>
+            <h2 class="main-title">our special dishes</h2>
+        </div>
+        <div class="popular-container">
+            <div class="popular-box" data-aos="fade-up">
+                <i class="fas fa-heart"></i>
+                <div class="img"><img src="imgs/food-1.png" alt=""></div>
+                <h2>delicious food</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                     <span>(50)</span>
+                </div>
+                <span>$39.99 <span>$59.99</span></span><br>
+                <button type="button" class="main-btn">add to cart</button>
+            </div>
+
+            <div class="popular-box" data-aos="fade-up">
+                <i class="fas fa-heart"></i>
+                <div class="img"><img src="imgs/food-2.png" alt=""></div>
+                <h2>delicious food</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                     <span>(50)</span>
+                </div>
+                <span>$39.99 <span>$59.99</span></span><br>
+                <button type="button" class="main-btn">add to cart</button>
+            </div>
+
+            <div class="popular-box" data-aos="fade-up">
+                <i class="fas fa-heart"></i>
+                <div class="img"><img src="imgs/food-3.png" alt=""></div>
+                <h2>delicious food</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                     <span>(50)</span>
+                </div>
+                <span>$39.99 <span>$59.99</span></span><br>
+                <button type="button" class="main-btn">add to cart</button>
+            </div>
+
+            <div class="popular-box" data-aos="fade-up">
+                <i class="fas fa-heart"></i>
+                <div class="img"><img src="imgs/food-4.png" alt=""></div>
+                <h2>delicious food</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                     <span>(50)</span>
+                </div>
+                <span>$39.99 <span>$59.99</span></span><br>
+                <button type="button" class="main-btn">add to cart</button>
+            </div>
+
+            <div class="popular-box" data-aos="fade-up">
+                <i class="fas fa-heart"></i>
+                <div class="img"><img src="imgs/food-5.png" alt=""></div>
+                <h2>delicious food</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                     <span>(50)</span>
+                </div>
+                <span>$39.99 <span>$59.99</span></span><br>
+                <button type="button" class="main-btn">add to cart</button>
+            </div>
+
+            <div class="popular-box" data-aos="fade-up">
+                <i class="fas fa-heart"></i>
+                <div class="img"><img src="imgs/food-6.png" alt=""></div>
+                <h2>delicious food</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                     <span>(50)</span>
+                </div>
+                <span>$39.99 <span>$59.99</span></span><br>
+                <button type="button" class="main-btn">add to cart</button>
+            </div>
+
+            <div class="popular-box" data-aos="fade-up">
+                <i class="fas fa-heart"></i>
+                <div class="img"><img src="imgs/food-7.png" alt=""></div>
+                <h2>delicious food</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                     <span>(50)</span>
+                </div>
+                <span>$39.99 <span>$59.99</span></span><br>
+                <button type="button" class="main-btn">add to cart</button>
+            </div>
+
+            <div class="popular-box" data-aos="fade-up">
+                <i class="fas fa-heart"></i>
+                <div class="img"><img src="imgs/food-8.png" alt=""></div>
+                <h2>delicious food</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                     <span>(50)</span>
+                </div>
+                <span>$39.99 <span>$59.99</span></span><br>
+                <button type="button" class="main-btn">add to cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- pub -->
+    <section>
+        <div class="pub-img" data-aos="fade-right">
+            <img src="imgs/row-banner.png" alt="">
+            <div class="pub-content">
+                <span>double cheese</span>
+                <h2>burger</h2>
+                <p>with cococola and fries</p>
+                <button type="button" class="main-btn">order now</button>
+            </div>
+        </div>
+    </section>
+    <!-- bunner -->
+    <section>
+        <div class="bunner-box">
+            <div class="bunner-grid" data-aos="fade-right">
+                <img src="imgs/banner-1.png" alt="">
+                <div class="bunner-content">
+                    <span>special offer</span>
+                    <h2>upto 50% off</h2>
+                    <button type="button" class="main-btn">oreder now</button>
+                </div>
+            </div>
+
+            <div class="bunner-grid" data-aos="fade-up">
+                <img src="imgs/banner-2.png" alt="">
+                <div class="bunner-content-2">
+                    <span>special offer</span>
+                    <h2>upto 50% off</h2>
+                    <button type="button" class="main-btn">oreder now</button>
+                </div>
+            </div>
+
+            <div class="bunner-grid" data-aos="fade-left">
+                <img src="imgs/banner-3.png" alt="">
+                <div class="bunner-content">
+                    <span>special offer</span>
+                    <h2>upto 50% off</h2>
+                    <button type="button" class="main-btn">oreder now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our menu -->
+    <section id="menu">
+        <div class="titles">
+            <span class="span-family">our menu</span>
+            <h2 class="main-title">our top dishes</h2>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-box" data-aos="fade-up">
+                <div class="img">
+                    <img src="imgs/menu-1.png" alt="">
+                </div>
+                <div class="menu-content">
+                    <h2>delicious food</h2>
+                    <span>$40.00</span>
+                </div>
+            </div>
+
+            <div class="menu-box" data-aos="fade-up">
+                <div class="img">
+                    <img src="imgs/menu-2.png" alt="">
+                </div>
+                <div class="menu-content">
+                    <h2>delicious food</h2>
+                    <span>$40.00</span>
+                </div>
+            </div>
+
+            <div class="menu-box" data-aos="fade-up">
+                <div class="img">
+                    <img src="imgs/menu-3.png" alt="">
+                </div>
+                <div class="menu-content">
+                    <h2>delicious food</h2>
+                    <span>$40.00</span>
+                </div>
+            </div>
+
+            <div class="menu-box" data-aos="fade-up">
+                <div class="img">
+                    <img src="imgs/menu-4.png" alt="">
+                </div>
+                <div class="menu-content">
+                    <h2>delicious food</h2>
+                    <span>$40.00</span>
+                </div>
+            </div>
+
+            <div class="menu-box" data-aos="fade-up">
+                <div class="img">
+                    <img src="imgs/menu-5.png" alt="">
+                </div>
+                <div class="menu-content">
+                    <h2>delicious food</h2>
+                    <span>$40.00</span>
+                </div>
+            </div>
+
+            <div class="menu-box" data-aos="fade-up">
+                <div class="img">
+                    <img src="imgs/menu-6.png" alt="">
+                </div>
+                <div class="menu-content">
+                    <h2>delicious food</h2>
+                    <span>$40.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="order">
+        <div class="titles">
+            <span class="span-family">order now</span>
+            <h2 class="main-title">fastest home delivery</h2>
+        </div>
+        <div class="order-info" data-aos="fade-up">
+            <div class="info-box">
+                <i class="fa-solid fa-calendar"></i>
+                <span>7:00am to 10:30pm</span>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-phone"></i>
+                <span>+2126123456</span>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>beni mellal,morocco-12265</span>
+            </div>
+        </div>
+        <div class="contact" data-aos="fade-up">
+            <form action="">
+                <div class="contact-info">
+                    <div class="input-box">
+                        <label for="name">your name</label>
+                        <input type="text" placeholder="customer's name">
+                    </div>
+                    <div class="input-box">
+                        <label for="2">your number</label>
+                        <input type="number" placeholder="customer's number">
+                    </div>
+                    <div class="input-box">
+                        <label for="2">your order</label>
+                        <input type="text" placeholder="food you want">
+                    </div>
+                    <div class="input-box">
+                        <label for="3">how much</label>
+                        <input type="number" placeholder="number or orders">
+                    </div>
+                    <div class="input-box">
+                        <label for="4">your details</label>
+                        <input type="text" placeholder="your message">
+                    </div>
+                    <div class="input-box">
+                        <label for="5">pick up time</label>
+                        <input type="datetime-local" placeholder="customer's name">
+                    </div>
+                </div>
+                <textarea name="adress" id="" cols="20" rows="10" placeholder="your adress"></textarea><br>
+                <button type="button" class="main-btn">order now</button>
+            </form>
+        </div>
+    </section>
+    <!-- our blogs -->
+    <section id="blogs">
+        <div class="titles">
+            <span class="span-family">our blogs</span>
+            <h2 class="main-title">our daily stories</h2>
+        </div>
+        <div class="blog-container">
+
+            <div class="blog-box" data-aos="fade-right">
+                <div class="img">
+                    <h4><i class="fas fa-calendar"></i> 21st may, 2021 </h4>
+                    <img src="imgs/blog-1.jpg" alt="">
+                </div>
+                <div class="blog-content">
+                    <div class="tags">
+                        <a href="#"><i class="fas fa-tag"></i> food /</a>&nbsp;
+                        <a href="#"><i class="fas fa-tag"></i> burger /</a>&nbsp;
+                        <a href="#"><i class="fas fa-tag"></i> pizza</a>
+                    </div>
+                    <h2>blog title goes here...</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem,</p>
+                    <button type="button" class="main-btn">read more</button>
+                </div>
+            </div>
+
+            <div class="blog-box" data-aos="fade-up">
+                <div class="img">
+                    <h4><i class="fas fa-calendar"></i> 21st may, 2021 </h4>
+                    <img src="imgs/blog-2.jpg" alt="">
+                </div>
+                <div class="blog-content">
+                    <div class="tags">
+                        <a href="#"><i class="fas fa-tag"></i> food /</a>&nbsp;
+                        <a href="#"><i class="fas fa-tag"></i> burger /</a>&nbsp;
+                        <a href="#"><i class="fas fa-tag"></i> pizza</a>
+                    </div>
+                    <h2>blog title goes here...</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem,</p>
+                    <button type="button" class="main-btn">read more</button>
+                </div>
+            </div>
+
+            <div class="blog-box" data-aos="fade-left">
+                <div class="img">
+                    <h4><i class="fas fa-calendar"></i> 21st may, 2021 </h4>
+                    <img src="imgs/blog-3.jpg" alt="">
+                </div>
+                <div class="blog-content">
+                    <div class="tags">
+                        <a href="#"><i class="fas fa-tag"></i> food /</a>&nbsp;
+                        <a href="#"><i class="fas fa-tag"></i> burger /</a>&nbsp;
+                        <a href="#"><i class="fas fa-tag"></i> pizza</a>
+                    </div>
+                    <h2>blog title goes here...</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem,</p>
+                    <button type="button" class="main-btn">read more</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- news letter -->
+    <section>
+        <div class="news-container" data-aos="fade-left">
+            <div class="news-content">
+                <h2>newsletter</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi,</p>
+            </div>
+            <div class="email-news">
+                <input type="email" placeholder="enter your email">
+                <button type="button" class="main-btn">subscribe</button>
+            </div>
+        </div>
+    </section>
+    <!-- upToggle -->
+    <section class="upToggle">
+        <span><i class="fa-solid fa-angle-up"></i></span>
+    </section>
+
+
+
+
+
+    <!-- link aos fade -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js file link -->
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration:800,
+            delay:400
+        });
+    </script>
+</body>
+</html>
